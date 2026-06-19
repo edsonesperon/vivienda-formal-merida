@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+env/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Conda
+.conda/
+
+# Datos derivados (regenerables) y volcados grandes
+data/interim/
+data/processed/
+data/raw/datos-masivos/   # volcado plano grande del SII; no versionar
+# (los extractos pequeños del SNIIV e Inmuebles24 en data/raw/ sí se versionan)
+
+# Salidas pesadas
+outputs/**/*.parquet
+
+# Sistema operativo
+.DS_Store
+Thumbs.db

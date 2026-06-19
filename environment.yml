@@ -1,0 +1,25 @@
+name: vivienda-merida
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  # Análisis
+  - pandas
+  - numpy
+  - scipy
+  - scikit-learn
+  - statsmodels
+  # Lectura/parseo de fuentes (HTML del cubo, xls/xlsx)
+  - beautifulsoup4
+  - lxml
+  - html5lib
+  - openpyxl
+  - xlrd
+  # Modelo de datos
+  - sqlalchemy
+  - pyarrow
+  # Entorno y visualización
+  - jupyterlab
+  - matplotlib
+  - seaborn
+  - pip
