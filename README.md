@@ -17,6 +17,7 @@
 **Fase 5 — Validación (pendiente):** chequeos de consistencia interna y contra referencias externas.
 
 **Fase 6 — Síntesis y entregable (pendiente):** reporte con los hallazgos (y un tablero opcional).
+
 ---
 
 ## Contexto y motivación
