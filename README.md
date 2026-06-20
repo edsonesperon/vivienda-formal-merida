@@ -2,8 +2,21 @@
 
 > Análisis reproducible del financiamiento de vivienda del Infonavit en Mérida, Yucatán: qué se financia por segmento de valor, cómo ha evolucionado el acceso y cómo contrasta con lo que ofrece el mercado.
 
-**Estado:** 🚧 En desarrollo (fase de caracterización de datos) · **Tipo:** Proyecto de portafolio · **Documentación:** Español
+## Fases
 
+**Fase 0 — Andamiaje del repo (completada):** estructura del proyecto, entorno conda (`vivienda-merida`, Python 3.11), `.gitignore`, `README.md` y publicación del repositorio en GitHub. Convención de commits establecida (Conventional Commits + estilo Chris Beams).
+
+**Fase 1 — Documentación base (completada):** tres documentos en `docs/`: `diccionario-variables.md` (variables por fuente y derivadas), `fuentes-y-procedencia.md` (de dónde sale cada fuente y cómo se extrae) y `decisiones.md` (bitácora de las trampas del dato y el criterio para resolverlas).
+
+**Fase 2 — Ingesta y caracterización (en progreso):** parseo de los pivotes HTML del cubo SNIIV a DataFrames *tidy* (año × segmento, para acciones y monto), carga del dataset de Inmuebles24, y definición y descarga del corte de Datos Masivos. Salida prevista: notebook `01_ingesta` y parsers reutilizables en `src/`.
+
+**Fase 3 — Limpieza y modelo de datos (pendiente):** formato largo, base de datos ligera (SQLite) y tabla de mapeo segmento ↔ rango de valor a partir de fuentes oficiales (CONAVI/Infonavit).
+
+**Fase 4 — EDA y análisis (pendiente):** mezcla y tendencia de segmentos, montos promedio, el corrimiento al alza 2015–2025, y el contraste entre lo financiado (SNIIV) y lo listado (Inmuebles24).
+
+**Fase 5 — Validación (pendiente):** chequeos de consistencia interna y contra referencias externas.
+
+**Fase 6 — Síntesis y entregable (pendiente):** reporte con los hallazgos (y un tablero opcional).
 ---
 
 ## Contexto y motivación
