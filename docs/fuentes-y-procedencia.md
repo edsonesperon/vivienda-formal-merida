@@ -48,3 +48,24 @@ reproducibilidad. El objetivo es que cualquiera pueda rehacer la extracción.
 - **Recolección:** capturada en el proyecto anterior; el scraper automatizado quedó bloqueado por Cloudflare + hCAPTCHA, por lo que el conjunto es acotado.
 - **Fecha:** ver la columna `fecha_registro` de cada anuncio.
 - **Nota:** precios de **lista**, a fecha de corte (no continuos ni de cierre).
+
+---
+
+## 4. Umbrales de segmento y serie de UMA (insumos del mapeo)
+
+Para el mapeo de la Fase 3 (`src/mapeo_segmentos.py`).
+
+**Umbrales de los segmentos (múltiplos de UMA/SM):**
+
+- **Oficial:** Infonavit, *Plan Estratégico y Financiero 2026* (aprobado por la
+  Asamblea, dic-2025; cita INEGI y RUV): económica-popular hasta 200 UMA;
+  tradicional 200–350 UMA. Fuente: portalmx.infonavit.org.mx (PEF 2026).
+- **Convención (confianza media):** cortes 118, 750 y 1500, de la clasificación
+  estándar RUV/AHM; el RUV sugiere ~128 para económica (subniveles popular
+  128/158/200).
+
+**Serie de referencia mensual:**
+
+- **UMA diaria 2016–2025:** INEGI / DOF (mensual = diaria × 30.4).
+  Fuente: https://www.inegi.org.mx/temas/uma/
+- **2015:** salario mínimo general (pre-UMA), $70.10 diarios (aprox.).

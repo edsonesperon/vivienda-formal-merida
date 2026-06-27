@@ -39,3 +39,18 @@ requieren criterio de dominio y no se deducen del dato en bruto.
 8. **El precio de Inmuebles24 es de lista, no de cierre.** Son ~59 anuncios, segmento
    medio-alto, a fecha de corte. *Decisión:* usarlos para un contraste direccional de la oferta
    por segmento / distribución, no para inferencia fina.
+
+9. **Mapeo segmento → pesos por año (opción rigurosa).** Los segmentos se definen
+   en múltiplos de la referencia mensual (salario mínimo hasta 2015, UMA desde
+   2016), no en pesos fijos, así que la frontera en pesos se recorre cada año.
+   *Decisión:* construir la tabla por año (múltiplo × UMA/SM del año), no una tabla
+   fija; la foto en pesos de la AHM resultó de un año viejo y se descartó como
+   referencia fija. Umbrales 200 y 350 UMA: oficiales (Infonavit PEF 2026). Cortes
+   118, 750 y 1500: convención RUV/AHM, marcados como tales.
+
+10. **Comparabilidad intertemporal de la clasificación.** El propio Infonavit
+    reconoce que el alza de precios por encima de la inflación afecta la
+    comparabilidad en el tiempo de la clasificación estándar por rangos de valor.
+    *Nota para la Fase 4:* parte del "corrimiento al alza" 2015–2025 puede ser
+    artefacto de umbrales que no siguieron el ritmo de los precios, no solo mercado
+    real; hay que distinguir cuánto es real vs. artefacto al interpretar.
