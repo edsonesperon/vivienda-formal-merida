@@ -8,9 +8,9 @@
 
 **Fase 1 — Documentación base (completada):** tres documentos en `docs/`: `diccionario-variables.md` (variables por fuente y derivadas), `fuentes-y-procedencia.md` (de dónde sale cada fuente y cómo se extrae) y `decisiones.md` (bitácora de las trampas del dato y el criterio para resolverlas).
 
-**Fase 2 — Ingesta y caracterización (en progreso):** parseo de los pivotes HTML del cubo SNIIV a DataFrames *tidy* (año × segmento, para acciones y monto), carga del dataset de Inmuebles24, y definición y descarga del corte de Datos Masivos. Salida prevista: notebook `01_ingesta` y parsers reutilizables en `src/`.
+**Fase 2 — Ingesta y caracterización (completada):** parsers reutilizables en `src/` (`ingesta_sniiv.py`, `ingesta_inmuebles.py`) y notebook `01_ingesta.ipynb` que carga el cubo SNIIV (municipio × segmento, acciones y monto) e Inmuebles24, con validación de los totales conocidos (69,448 créditos; $24,493 M). Datos Masivos queda pendiente por indisponibilidad del servicio del SII.
 
-**Fase 3 — Limpieza y modelo de datos (pendiente):** formato largo, base de datos ligera (SQLite) y tabla de mapeo segmento ↔ rango de valor a partir de fuentes oficiales (CONAVI/Infonavit).
+**Fase 3 — Mapeo y modelo de datos (completada):** mapeo segmento ↔ rango de valor por año (`src/mapeo_segmentos.py`), con umbrales en UMA (oficiales 200/350; convención 118/750/1500) y serie de UMA 2015–2025. Modelo ensamblado en SQLite (`src/modelo_datos.py`, `notebooks/02_modelo_datos.ipynb`): tablas `sniiv`, `segmento_valor` e `inmuebles`, con enriquecimiento por JOIN.
 
 **Fase 4 — EDA y análisis (pendiente):** mezcla y tendencia de segmentos, montos promedio, el corrimiento al alza 2015–2025, y el contraste entre lo financiado (SNIIV) y lo listado (Inmuebles24).
 
@@ -73,7 +73,7 @@ vivienda-formal-merida/
 │   ├── diccionario-variables.md     # definición de variables
 │   ├── fuentes-y-procedencia.md     # cómo y cuándo se extrajo cada cosa
 │   └── decisiones.md                # bitácora de decisiones y "trampas" del dato
-├── notebooks/        # 01_ingesta, 02_limpieza, 03_eda, ...
+├── notebooks/        # 01_ingesta, 02_modelo_datos, ...
 ├── src/              # parsers, ingesta y limpieza reutilizables
 ├── outputs/          # figuras, tablas y reporte
 ├── environment.yml
