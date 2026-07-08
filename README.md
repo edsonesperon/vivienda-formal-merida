@@ -12,7 +12,7 @@
 
 **Fase 3 — Mapeo y modelo de datos (completada):** mapeo segmento ↔ rango de valor por año (`src/mapeo_segmentos.py`), con umbrales en UMA (oficiales 200/350; convención 118/750/1500) y serie de UMA 2015–2025. Modelo ensamblado en SQLite (`src/modelo_datos.py`, `notebooks/02_modelo_datos.ipynb`): tablas `sniiv`, `segmento_valor` e `inmuebles`, con enriquecimiento por JOIN.
 
-**Fase 4 — EDA y análisis (pendiente):** mezcla y tendencia de segmentos, montos promedio, el corrimiento al alza 2015–2025, y el contraste entre lo financiado (SNIIV) y lo listado (Inmuebles24).
+**Fase 4 — EDA y análisis (completada):** notebook `03_eda.ipynb` en cuatro bloques —composición y desplazamiento de segmentos, flujo y crédito promedio, traducción a pesos con el caveat de comparabilidad, y el desajuste financiado vs. listado—. Síntesis en `outputs/hallazgos.md`.
 
 **Fase 5 — Validación (pendiente):** chequeos de consistencia interna y contra referencias externas.
 
