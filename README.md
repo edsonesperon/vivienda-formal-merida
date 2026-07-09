@@ -16,7 +16,7 @@
 
 **Fase 5 — Validación (completada):** notebook `04_validacion.ipynb` con chequeos de consistencia (totales contra la fuente, participaciones que suman 100%, cobertura e integridad del mapeo, y asignación de listados sin huecos).
 
-**Fase 6 — Síntesis y entregable (pendiente):** reporte con los hallazgos (y un tablero opcional).
+**Fase 6 — Síntesis y entregable (completada):** síntesis navegable en `outputs/hallazgos.md` y reporte final en PDF (`outputs/reporte.pdf`).
 
 ---
 
